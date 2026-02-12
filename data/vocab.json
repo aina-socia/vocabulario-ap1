@@ -1,0 +1,58 @@
+[
+  {
+    "id": "u1",
+    "title": "第一单元：基础入门",
+    "topics": [
+      {
+        "id": "u1_t1",
+        "title": "问候与告别",
+        "words": [
+          { "id": "101", "zh": "你好", "pos": "int.", "es": "hola" },
+          { "id": "102", "zh": "早上好", "pos": "phr.", "es": "buenos días" },
+          { "id": "103", "zh": "再见", "pos": "int.", "es": "adiós" },
+          { "id": "104", "zh": "明天见", "pos": "phr.", "es": "hasta mañana" },
+          { "id": "105", "zh": "你好吗？", "pos": "phr.", "es": "¿cómo estás?" }
+        ]
+      },
+      {
+        "id": "u1_t2",
+        "title": "人称代词",
+        "words": [
+          { "id": "106", "zh": "我", "pos": "pron.", "es": "yo" },
+          { "id": "107", "zh": "你", "pos": "pron.", "es": "tú" },
+          { "id": "108", "zh": "他", "pos": "pron.", "es": "él" },
+          { "id": "109", "zh": "她", "pos": "pron.", "es": "ella" },
+          { "id": "110", "zh": "我们", "pos": "pron.", "es": "nosotros" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "u2",
+    "title": "第二单元：日常生活",
+    "topics": [
+      {
+        "id": "u2_t1",
+        "title": "颜色",
+        "words": [
+          { "id": "201", "zh": "红色的", "pos": "adj.", "es": "rojo" },
+          { "id": "202", "zh": "蓝色的", "pos": "adj.", "es": "azul" },
+          { "id": "203", "zh": "白色的", "pos": "adj.", "es": "blanco" },
+          { "id": "204", "zh": "黑色的", "pos": "adj.", "es": "negro" },
+          { "id": "205", "zh": "绿色的", "pos": "adj.", "es": "verde" }
+        ]
+      },
+      {
+        "id": "u2_t2",
+        "title": "职业",
+        "words": [
+          { "id": "206", "zh": "老师", "pos": "n.", "es": "profesor" },
+          { "id": "207", "zh": "学生", "pos": "n.", "es": "estudiante" },
+          { "id": "208", "zh": "医生", "pos": "n.", "es": "médico" },
+          { "id": "209", "zh": "警察", "pos": "n.", "es": "policía" },
+          { "id": "210", "zh": "厨师", "pos": "n.", "es": "cocinero" }
+        ]
+      }
+    ]
+  }
+]

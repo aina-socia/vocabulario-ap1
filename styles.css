@@ -1,0 +1,298 @@
+:root {
+    --primary: #3b82f6;       /* 主色调：蓝 */
+    --primary-dark: #2563eb;
+    --primary-light: #eff6ff;
+    --success: #22c55e;       /* 绿 */
+    --warning: #eab308;       /* 黄 */
+    --danger: #ef4444;        /* 红 */
+    --bg-body: #f8fafc;       /* 浅灰背景 */
+    --bg-card: #ffffff;
+    --text-main: #1e293b;     /* 深黑文字 */
+    --text-sub: #64748b;      /* 浅灰文字 */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    background-color: var(--bg-body); 
+    color: var(--text-main); 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'Nunito', 'Noto Sans SC', sans-serif;
+}
+
+/* Header */
+header { 
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)); 
+    color: white; 
+    padding: 1rem 0; 
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 { font-weight: 800; letter-spacing: 0.5px; font-size: 1.4rem; }
+
+#home-btn { 
+    background: rgba(255,255,255,0.2); 
+    border: 1px solid rgba(255,255,255,0.4); 
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    backdrop-filter: blur(4px);
+}
+#home-btn:hover { background: rgba(255,255,255,0.3); }
+
+/* Main Container */
+main { 
+    flex: 1; 
+    padding: 2rem 1.5rem; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    width: 100%; 
+}
+
+/* Utilities */
+.hidden { display: none !important; }
+.btn { 
+    display: block; 
+    width: 100%; 
+    padding: 0.8rem; 
+    border: none; 
+    border-radius: 8px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    text-align: center; 
+    font-size: 1rem;
+}
+.btn:active { transform: scale(0.98); }
+.btn-primary { 
+    background-color: var(--primary); 
+    color: white; 
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+.btn-primary:hover { background-color: var(--primary-dark); }
+.btn-outline { 
+    background-color: white; 
+    border: 2px solid var(--primary); 
+    color: var(--primary); 
+}
+.btn-outline:hover { background-color: var(--primary-light); }
+
+/* Card Styles */
+.card { 
+    background: var(--bg-card); 
+    padding: 2rem; 
+    border-radius: 16px; 
+    box-shadow: var(--shadow); 
+    text-align: center; 
+    transition: transform 0.2s;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* Home Grid */
+.mode-grid { 
+    display: grid; 
+    gap: 1.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+}
+.mode-card { cursor: pointer; position: relative; overflow: hidden; }
+.mode-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+.mode-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 4px; height: 100%;
+    background: var(--primary);
+}
+.mode-card h2 { color: var(--text-main); margin-bottom: 0.5rem; }
+.mode-card p { color: var(--text-sub); }
+
+/* Select Inputs */
+select { 
+    width: 100%; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+    border: 2px solid #e2e8f0; 
+    border-radius: 12px; 
+    font-size: 1rem; 
+    background: white; 
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.2s;
+}
+select:focus { border-color: var(--primary); }
+label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--text-main); text-align: left; }
+
+/* 学习模式：单词卡片网格 (核心修改) */
+.vocab-grid { 
+    display: grid; 
+    /* 强制每行3个，如果屏幕太小会由媒体查询接管 */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    margin-bottom: 2rem; 
+}
+
+.vocab-card { 
+    background: white; 
+    border-radius: 16px; 
+    padding: 1.2rem; 
+    box-shadow: var(--shadow); 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.8rem;
+    transition: transform 0.2s;
+    border: 1px solid #f1f5f9;
+}
+.vocab-card:hover { transform: translateY(-3px); }
+
+/* 卡片内容排版 */
+.card-row-1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-main);
+    padding-right: 2rem; /* 给音频按钮留位置 */
+    line-height: 1.2;
+}
+.card-row-2 {
+    font-size: 0.85rem;
+    color: #94a3b8; /* 浅色 */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+.card-row-3 {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-top: 0.2rem;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 0.8rem;
+}
+
+/* 语音按钮 */
+.audio-icon-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+.audio-icon-btn:hover { background: var(--primary); color: white; }
+
+/* 底部状态按钮组 */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.status-toggle-btn {
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: var(--text-sub);
+    border-radius: 20px;
+    padding: 0.4rem 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* 按钮激活状态 */
+.status-toggle-btn:hover { background: #f8fafc; }
+
+.status-toggle-btn.btn-green.active {
+    background-color: var(--success);
+    color: white;
+    border-color: var(--success);
+    box-shadow: 0 2px 4px rgba(34, 197, 94, 0.3);
+}
+.status-toggle-btn.btn-yellow.active {
+    background-color: var(--warning);
+    color: white;
+    border-color: var(--warning);
+    box-shadow: 0 2px 4px rgba(234, 179, 8, 0.3);
+}
+.status-toggle-btn.btn-red.active {
+    background-color: var(--danger);
+    color: white;
+    border-color: var(--danger);
+    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+/* 默认未选中时，只有文字颜色稍微有点区分 */
+.status-toggle-btn.btn-green:not(.active) { color: #15803d; border-color: #dcfce7; background: #f0fdf4; }
+.status-toggle-btn.btn-yellow:not(.active) { color: #a16207; border-color: #fef9c3; background: #fefce8; }
+.status-toggle-btn.btn-red:not(.active) { color: #b91c1c; border-color: #fee2e2; background: #fef2f2; }
+
+
+/* Quiz Styles */
+.progress-container { background: #e2e8f0; height: 10px; border-radius: 5px; margin-bottom: 2rem; overflow: hidden; }
+.progress-bar { height: 100%; background: var(--primary); width: 0%; transition: width 0.3s ease-out; }
+
+.quiz-question { font-size: 2rem; font-weight: 800; margin-bottom: 2rem; color: var(--text-main); }
+.quiz-options { display: grid; gap: 1rem; }
+.option-btn { 
+    background: white; 
+    border: 2px solid #e2e8f0; 
+    color: var(--text-main); 
+    padding: 1.2rem; 
+    border-radius: 12px; 
+    font-size: 1.1rem; 
+    transition: all 0.2s;
+}
+.option-btn:hover:not(:disabled) { border-color: var(--primary); background: var(--primary-light); }
+.option-btn.correct { background-color: var(--success); color: white; border-color: var(--success); }
+.option-btn.wrong { background-color: var(--danger); color: white; border-color: var(--danger); }
+
+.input-area input { 
+    width: 100%; padding: 1rem; font-size: 1.5rem; 
+    border: 2px solid #e2e8f0; border-radius: 12px; margin-bottom: 1rem; text-align: center; color: var(--text-main);
+}
+.input-area input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); }
+
+.feedback-msg { margin-top: 1rem; font-weight: bold; min-height: 1.5rem; font-size: 1.1rem; }
+.feedback-msg.correct { color: var(--success); }
+.feedback-msg.wrong { color: var(--danger); }
+
+/* Result List */
+.result-item { display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid #f1f5f9; align-items: center; }
+.result-item:last-child { border-bottom: none; }
+.result-item span:first-child { font-weight: 600; }
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+    .vocab-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .vocab-grid { grid-template-columns: 1fr; }
+    .header-content h1 { font-size: 1.1rem; }
+    #home-btn { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
+}
+
+footer { text-align: center; padding: 2rem; color: var(--text-sub); font-size: 0.9rem; margin-top: auto; }
