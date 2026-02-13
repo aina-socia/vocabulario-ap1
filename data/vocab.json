@@ -1,35 +1,233 @@
 [
+   {
+    "id": "u0",
+    "title": "导入单元",
+    "topics": [
+      {
+        "id": "u0_t1",
+        "title": "数字1-10",
+        "words": [
+          { "id": "001", "zh": "1", "pos": "m.", "es": "uno" },
+          { "id": "002", "zh": "2", "pos": "m.", "es": "dos" },
+          { "id": "003", "zh": "3", "pos": "m.", "es": "tres" },
+          { "id": "004", "zh": "4", "pos": "m.", "es": "cuatro" },
+          { "id": "005", "zh": "5", "pos": "m.", "es": "cinco" },
+          { "id": "006", "zh": "6", "pos": "m.", "es": "seis" },
+          { "id": "007", "zh": "7", "pos": "m.", "es": "siete" },
+          { "id": "008", "zh": "8", "pos": "m.", "es": "ocho" },
+          { "id": "009", "zh": "9", "pos": "m.", "es": "nueve" },
+          { "id": "010", "zh": "10", "pos": "m.", "es": "diez" }
+        ]
+      },
+      {
+        "id": "u0_t2",
+        "title": "基础文具",
+        "words": [
+          { "id": "011", "zh": "书包", "pos": "f.", "es": "mochila" },
+          { "id": "012", "zh": "椅子", "pos": "f.", "es": "silla" },
+          { "id": "013", "zh": "纸", "pos": "m.", "es": "papel" },
+          { "id": "014", "zh": "铅笔", "pos": "m.", "es": "lápiz" },
+          { "id": "015", "zh": "书", "pos": "m.", "es": "libro" },
+          { "id": "016", "zh": "电脑", "pos": "m.", "es": "ordenador" },
+          { "id": "017", "zh": "文具盒", "pos": "m.", "es": "estuche" },
+          { "id": "018", "zh": "圆珠笔", "pos": "m.", "es": "bolígrafo" },
+          { "id": "019", "zh": "笔记本", "pos": "m.", "es": "cuaderno" },
+          { "id": "020", "zh": "桌子", "pos": "f.", "es": "mesa" }
+        ]
+      }
+    ]
+  },
   {
     "id": "u1",
-    "title": "第一单元：基础入门",
+    "title": "第一单元:认识你我",
     "topics": [
       {
         "id": "u1_t1",
-        "title": "问候与告别",
+        "title": "数字11-99",
         "words": [
-          { "id": "101", "zh": "你好", "pos": "int.", "es": "hola" },
-          { "id": "102", "zh": "早上好", "pos": "phr.", "es": "buenos días" },
-          { "id": "103", "zh": "再见", "pos": "int.", "es": "adiós" },
-          { "id": "104", "zh": "明天见", "pos": "phr.", "es": "hasta mañana" },
-          { "id": "105", "zh": "你好吗？", "pos": "phr.", "es": "¿cómo estás?" }
+          { "id": "101", "zh": "11", "pos": "m.", "es": "once" },
+          { "id": "102", "zh": "12", "pos": "m.", "es": "doce" },
+          { "id": "103", "zh": "13", "pos": "m.", "es": "trece" },
+          { "id": "104", "zh": "14", "pos": "m.", "es": "catorce" },
+          { "id": "105", "zh": "15", "pos": "m.", "es": "quince" },
+          { "id": "106", "zh": "16", "pos": "m.", "es": "dieciséis" },
+          { "id": "107", "zh": "17", "pos": "m.", "es": "diecisiete" },
+          { "id": "108", "zh": "18", "pos": "m.", "es": "dieciocho" },
+          { "id": "109", "zh": "19", "pos": "m.", "es": "diecinueve" },
+          { "id": "110", "zh": "20", "pos": "m.", "es": "veinte" },
+          { "id": "111", "zh": "30", "pos": "m.", "es": "treinta" },
+          { "id": "112", "zh": "40", "pos": "m.", "es": "cuarenta" },
+          { "id": "113", "zh": "50", "pos": "m.", "es": "cincuenta" },
+          { "id": "114", "zh": "60", "pos": "m.", "es": "sesenta" },
+          { "id": "115", "zh": "70", "pos": "m.", "es": "setenta" },
+          { "id": "116", "zh": "80", "pos": "m.", "es": "ochenta" },
+          { "id": "117", "zh": "90", "pos": "m.", "es": "noventa" },
+          { "id": "118", "zh": "100", "pos": "m.", "es": "cien" }
         ]
       },
       {
         "id": "u1_t2",
         "title": "人称代词",
         "words": [
-          { "id": "106", "zh": "我", "pos": "pron.", "es": "yo" },
-          { "id": "107", "zh": "你", "pos": "pron.", "es": "tú" },
-          { "id": "108", "zh": "他", "pos": "pron.", "es": "él" },
-          { "id": "109", "zh": "她", "pos": "pron.", "es": "ella" },
-          { "id": "110", "zh": "我们", "pos": "pron.", "es": "nosotros" }
+          { "id": "119", "zh": "我", "pos": "pron.", "es": "yo" },
+          { "id": "120", "zh": "你", "pos": "pron.", "es": "tú" },
+          { "id": "121", "zh": "他", "pos": "pron.", "es": "él" },
+          { "id": "122", "zh": "她", "pos": "pron.", "es": "ella" },
+          { "id": "123", "zh": "我们", "pos": "pron.", "es": "nosotros" },
+          { "id": "124", "zh": "你们", "pos": "pron.", "es": "vosotros" },
+          { "id": "125", "zh": "他们", "pos": "pron.", "es": "ellos" },
+          { "id": "126", "zh": "她们", "pos": "pron.", "es": "ellas" },
+          { "id": "127", "zh": "诸位", "pos": "pron.", "es": "ustedes" },
+          { "id": "128", "zh": "您", "pos": "pron.", "es": "usted" }
+        ]
+      },
+      {
+        "id": "u1_t3",
+        "title": "身份信息",
+        "words": [
+          { "id": "129", "zh": "名字", "pos": "m.", "es": "nombre" },
+          { "id": "130", "zh": "姓氏", "pos": "m.", "es": "apellido" },
+          { "id": "131", "zh": "年龄", "pos": "f.", "es": "edad" },
+          { "id": "132", "zh": "出生日期", "pos": "f.", "es": "fecha de nacimiento" },
+          { "id": "133", "zh": "电子邮箱", "pos": "m.", "es": "correo electrónico" },
+          { "id": "134", "zh": "电话", "pos": "m.", "es": "teléfono" },
+          { "id": "135", "zh": "手机", "pos": "m.", "es": "móvil" },
+          { "id": "136", "zh": "职业", "pos": "f.", "es": "profesión" },
+          { "id": "137", "zh": "国籍", "pos": "f.", "es": "nacionalidad" },
+          { "id": "138", "zh": "地址", "pos": "f.", "es": "dirección" },
+          { "id": "139", "zh": "国家", "pos": "m.", "es": "país" },
+          { "id": "140", "zh": "信息，数据", "pos": "m.", "es": "dato" },
+          { "id": "141", "zh": "个人的", "pos": "adj.", "es": "personal" }
+        ]
+      },
+     {
+        "id": "u1_t4",
+        "title": "职业",
+        "words": [
+          { "id": "142", "zh": "科学家", "pos": "m.", "es": "científico" },
+          { "id": "143", "zh": "厨师", "pos": "m.", "es": "cocinero" },
+          { "id": "144", "zh": "学生", "pos": "m.f.", "es": "estudiante" },
+          { "id": "145", "zh": "服装设计师", "pos": "m.", "es": "diseñador de moda" },
+          { "id": "146", "zh": "记者", "pos": "m.f.", "es": "periodista" },
+          { "id": "147", "zh": "老师", "pos": "m.", "es": "profesor" },
+          { "id": "148", "zh": "翻译", "pos": "m.", "es": "traductor" },
+          { "id": "149", "zh": "护士", "pos": "m.", "es": "enfermero" },
+          { "id": "150", "zh": "服务员", "pos": "m.", "es": "camarero" },
+          { "id": "151", "zh": "秘书", "pos": "m.", "es": "secretario" },
+          { "id": "152", "zh": "运动员", "pos": "m.f.", "es": "deportista" },
+          { "id": "153", "zh": "销售", "pos": "m.f.", "es": "comercial" },
+          { "id": "154", "zh": "医生", "pos": "m.", "es": "médico" },
+          { "id": "155", "zh": "警察", "pos": "m.f.", "es": "policía" },
+          { "id": "156", "zh": "律师", "pos": "m.", "es": "abogado" },
+          { "id": "157", "zh": "歌手", "pos": "m.f.", "es": "cantante" },
+          { "id": "158", "zh": "摄影师", "pos": "m.", "es": "fotógrafo" },
+          { "id": "159", "zh": "理发师", "pos": "m.", "es": "peluquero" },
+          { "id": "160", "zh": "机械师", "pos": "m.", "es": "mecánico" },
+          { "id": "161", "zh": "足球运动员", "pos": "m.f.", "es": "futbolista" },
+          { "id": "162", "zh": "程序员", "pos": "m.", "es": "informático" },
+          { "id": "163", "zh": "建筑师", "pos": "m.", "es": "arquitecto" },
+          { "id": "164", "zh": "前台", "pos": "m.f.", "es": "recepcionista" }
+        ]
+      },
+      {
+        "id": "u1_t5",
+        "title": "工作场所",
+        "words": [
+          { "id": "165", "zh": "大学", "pos": "f.", "es": "universidad" },
+          { "id": "166", "zh": "健身房", "pos": "m.", "es": "gimnasio" },
+          { "id": "167", "zh": "实验室", "pos": "m.", "es": "laboratorio" },
+          { "id": "168", "zh": "医院", "pos": "m.", "es": "hospital" },
+          { "id": "169", "zh": "报社", "pos": "m.", "es": "periódico" },
+          { "id": "170", "zh": "酒吧", "pos": "m.", "es": "bar" },
+          { "id": "171", "zh": "作坊", "pos": "m.", "es": "taller" },
+          { "id": "172", "zh": "餐厅", "pos": "m.", "es": "restaurante" },
+          { "id": "173", "zh": "银行", "pos": "m.", "es": "banco" },
+          { "id": "174", "zh": "运输公司", "pos": "f.", "es": "empresa de transportes" },
+          { "id": "175", "zh": "电力通讯公司", "pos": "f.", "es": "empresa de telecomunicaciones" },
+          { "id": "176", "zh": "律师事务所", "pos": "m.", "es": "despacho de abogados" },
+          { "id": "177", "zh": "建筑事务所", "pos": "m.", "es": "despacho de arquitectura" },
+          { "id": "178", "zh": "旅行社", "pos": "f.", "es": "agencia de viajes" },
+          { "id": "179", "zh": "广告商", "pos": "f.", "es": "agencia de publicidad" },
+          { "id": "180", "zh": "商店", "pos": "f.", "es": "tienda" },
+          { "id": "181", "zh": "超市", "pos": "m.", "es": "supermercado" },
+          { "id": "182", "zh": "语言学校", "pos": "f.", "es": "escuela de lenguas" },
+          { "id": "183", "zh": "电视台", "pos": "m.", "es": "canal de televisión" },
+          { "id": "184", "zh": "旅馆，酒店", "pos": "m.", "es": "hotel" }
+        ]
+      },
+       {
+        "id": "u1_t6",
+        "title": "国家和国籍",
+        "words": [
+          { "id": "185", "zh": "阿根廷", "pos": "", "es": "Argentina" },
+          { "id": "186", "zh": "阿根廷的；阿根廷人", "pos": "adj.-m.", "es": "argentino" },
+          { "id": "187", "zh": "澳大利亚", "pos": "", "es": "Australia" },
+          { "id": "188", "zh": "澳大利亚的；澳大利亚人", "pos": "adj.-m.", "es": "australiano" },
+          { "id": "189", "zh": "意大利", "pos": ".", "es": "Italia" },
+          { "id": "190", "zh": "意大利的；意大利人；意大利语", "pos": "adj.-m.", "es": "italiano" },
+          { "id": "191", "zh": "中国", "pos": "", "es": "China" },
+          { "id": "192", "zh": "中国的；中国人；汉语", "pos": "adj.-m.", "es": "chino" },
+          { "id": "193", "zh": "印度", "pos": "", "es": "India" },
+          { "id": "194", "zh": "印度的；印度人", "pos": "adj.-m.", "es": "indio" },
+          { "id": "195", "zh": "德国", "pos": "", "es": "Alemania" },
+          { "id": "196", "zh": "德国的；德国人；德语", "pos": "adj.-m.", "es": "alemán" },
+          { "id": "197", "zh": "西班牙", "pos": "", "es": "España" },
+          { "id": "198", "zh": "西班牙的；西班牙人；西语", "pos": "adj.-m.", "es": "español" },
+          { "id": "199", "zh": "法国", "pos": "", "es": "Francia" },
+          { "id": "1200", "zh": "法国的；法国人；法语", "pos": "adj.-m.", "es": "francés" },
+          { "id": "1201", "zh": "英格兰", "pos": "", "es": "Inglaterra" },
+          { "id": "1202", "zh": "英国的；英国人；英语", "pos": "adj.-m.", "es": "inglés" },
+          { "id": "1203", "zh": "日本", "pos": "", "es": "Japón" },
+          { "id": "1204", "zh": "日本的；日本人；日语", "pos": "adj.-m.", "es": "japonés" },
+          { "id": "1205", "zh": "葡萄牙", "pos": "", "es": "Portugal" },
+          { "id": "1206", "zh": "葡萄牙的；葡萄牙人；葡萄牙语", "pos": "adj.-m.", "es": "portugués" },
+          { "id": "1207", "zh": "美国", "pos": "", "es": "Estados Unidos" },
+          { "id": "1208", "zh": "美国的；美国人", "pos": "adj.-m.", "es": "estadounidense" },
+          { "id": "1209", "zh": "加拿大", "pos": "", "es": "Canadá" },
+          { "id": "1210", "zh": "加拿大的；加拿大人", "pos": "adj.-m.", "es": "canadiense" },
+          { "id": "1211", "zh": "摩洛哥", "pos": "", "es": "Marruecos" },
+          { "id": "1212", "zh": "摩洛哥的；摩洛哥人", "pos": "adj.-m.", "es": "marroquí" },
+          { "id": "1213", "zh": "巴西", "pos": "", "es": "Brasil" },
+          { "id": "1214", "zh": "巴西的；巴西人", "pos": "adj.-m.", "es": "brasileño" },
+          { "id": "1215", "zh": "智利", "pos": "", "es": "Chile" },
+          { "id": "1216", "zh": "智利的；智利人", "pos": "adj.-m.", "es": "chileno" },
+          { "id": "1217", "zh": "俄罗斯", "pos": "", "es": "Rusica" },
+          { "id": "1218", "zh": "俄罗斯的；俄罗斯人；俄语", "pos": "adj.-m.", "es": "ruso" },
+          { "id": "1219", "zh": "墨西哥", "pos": "", "es": "México" },
+          { "id": "1220", "zh": "墨西哥的；墨西哥人", "pos": "adj.-m.", "es": "mexicano" },
+          { "id": "1221", "zh": "古巴", "pos": "", "es": "Cuba" },
+          { "id": "1222", "zh": "古巴的；古巴人", "pos": "adj.-m.", "es": "cubano" },
+          { "id": "1223", "zh": "哥伦比亚", "pos": "", "es": "Colombia" },
+          { "id": "1224", "zh": "哥伦比亚的；哥伦比亚人", "pos": "adj.-m.", "es": "colombiano" }
+        ]
+      },
+      {
+        "id": "u1_t7",
+        "title": "其他词汇",
+        "words": [
+          {"id": "1225", "zh": "朋友", "pos": "m.", "es": "amigo" },
+          {"id": "1226", "zh": "是", "pos": "v.", "es": "ser" },
+          {"id": "1227", "zh": "有", "pos": "v.", "es": "tener" },
+          {"id": "1228", "zh": "叫作（用于姓名）", "pos": "v.", "es": "llamarse" },
+          {"id": "1229", "zh": "谁", "pos": "pron.", "es": "quién" },
+          {"id": "1230", "zh": "什么", "pos": "pron.", "es": "qué" },
+          {"id": "1231", "zh": "怎么，如何", "pos": "adv.", "es": "cómo" },
+          {"id": "1232", "zh": "哪个", "pos": "pron.", "es": "cuál" },
+          {"id": "1233", "zh": "哪里", "pos": "adv.", "es": "dónde" },
+          {"id": "1234", "zh": "多少", "pos": "adj.", "es": "cuánto" },
+          {"id": "1235", "zh": "工作", "pos": "m.", "es": "trabajo" },
+          {"id": "1236", "zh": "工作，上班", "pos": "v.", "es": "trabajar" },
+          {"id": "1237", "zh": "办公室", "pos": "f.", "es": "oficina" },
+          {"id": "1238", "zh": "同事", "pos": "m.f.", "es": "colega" },
+          {"id": "1239", "zh": "上司，老板", "pos": "m.", "es": "jefe" },
+          {"id": "1240", "zh": "数字，号码", "pos": "m.", "es": "número" }
         ]
       }
     ]
   },
   {
     "id": "u2",
-    "title": "第二单元：日常生活",
+    "title": "第二单元:学习西语",
     "topics": [
       {
         "id": "u2_t1",
